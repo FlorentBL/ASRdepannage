@@ -23,14 +23,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 gradient-yellow rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">ASR</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/6f44ce59-e97b-4220-993c-0f1ecd7ec2cd.png" 
+              alt="ASR Dépannage Logo" 
+              className="h-12 w-auto"
+            />
             <div className="hidden sm:block">
-              <div className="text-lg font-montserrat font-bold text-foreground">
-                ASR Dépannage
-              </div>
               <div className="text-xs text-muted-foreground">
                 24/7 • Savoie & Rhône-Alpes
               </div>
