@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/assets/asr-logo.png" 
+              src="/assets/asr-logo-transparent.png" 
               alt="ASR Dépannage Logo" 
               className="h-12 w-auto"
             />
