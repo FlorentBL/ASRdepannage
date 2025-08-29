@@ -22,7 +22,7 @@ const EmergencyBanner = () => {
             className="border-emergency-foreground text-emergency-foreground hover:bg-emergency-foreground hover:text-emergency transition-bounce h-7 text-xs font-semibold"
             asChild
           >
-            <a href="tel:[NUM_TEL]" className="flex items-center space-x-1">
+            <a href="tel:0609595920" className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
               <span>Urgence</span>
             </a>

@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/assets/asr-logo-transparent.png" 
+              src="/lovable-uploads/025b0eb6-2c93-46f9-90cb-06ff9e73be7d.png" 
               alt="ASR Dépannage Logo" 
               className="h-12 w-auto"
             />
@@ -62,9 +62,9 @@ const Header = () => {
               className="gradient-yellow hover:shadow-button transition-bounce font-inter font-semibold"
               asChild
             >
-              <a href="tel:[NUM_TEL]" className="flex items-center space-x-2">
+              <a href="tel:0479855717" className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span className="hidden sm:inline">[NUM_TEL]</span>
+                <span className="hidden sm:inline">04 79 85 57 17</span>
                 <span className="sm:hidden">Appeler</span>
               </a>
             </Button>

@@ -35,7 +35,7 @@ const Contact = () => {
                   <Phone className="h-8 w-8 text-primary animate-pulse" />
                   <div>
                     <div className="text-2xl font-montserrat font-bold text-foreground">
-                      [NUM_TEL]
+                      04 79 85 57 17
                     </div>
                     <div className="text-sm text-muted-foreground font-inter">
                       Intervention immédiate - Ligne directe
@@ -48,7 +48,7 @@ const Contact = () => {
                   className="w-full gradient-yellow hover:shadow-button transition-bounce font-inter font-bold"
                   asChild
                 >
-                  <a href="tel:[NUM_TEL]" className="flex items-center justify-center space-x-3">
+                  <a href="tel:0479855717" className="flex items-center justify-center space-x-3">
                     <Phone className="h-5 w-5" />
                     <span>📞 Appeler maintenant</span>
                   </a>
@@ -220,7 +220,7 @@ const Contact = () => {
                       className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce"
                       asChild
                     >
-                      <a href="tel:[NUM_TEL]">Urgence ? Appeler</a>
+                      <a href="tel:0479855717">Urgence ? Appeler</a>
                     </Button>
                   </div>
                 </form>
