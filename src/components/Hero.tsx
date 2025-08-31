@@ -1,6 +1,6 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "/assets/asr-logo-transparent.png";
+import heroImage from "@/assets/hero-asr-truck.png";
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Camion Mercedes ASR - Spécialiste dépannage poids lourds Rhône-Alpes"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/10" />
       </div>
 
       {/* Content */}
