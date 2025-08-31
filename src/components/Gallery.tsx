@@ -105,6 +105,76 @@ const Gallery = () => {
       alt: "Camion frigorifique en transport",
       title: "Transport Frigorifique",
       description: "Spécialisation dans le transport et dépannage de véhicules frigorifiques"
+    },
+    {
+      id: 15,
+      src: "/lovable-uploads/357948da-0b73-4921-a140-5371b5270d80.png",
+      alt: "Intervention nocturne avec plateforme élévatrice",
+      title: "Équipement de Levage",
+      description: "Intervention nocturne avec plateforme élévatrice spécialisée"
+    },
+    {
+      id: 16,
+      src: "/lovable-uploads/f5f49cbe-7dc4-41bd-a317-e52749d2086e.png",
+      alt: "Plateforme élévatrice ASR en action",
+      title: "Levage Professionnel",
+      description: "Notre plateforme élévatrice pour interventions en hauteur"
+    },
+    {
+      id: 17,
+      src: "/lovable-uploads/6d5d977c-c7ce-4ca3-84d3-d9ac1f8a6bbe.png",
+      alt: "Parc de matériel ASR Dépannage",
+      title: "Matériel Spécialisé",
+      description: "Notre parc de plateformes et équipements spécialisés"
+    },
+    {
+      id: 18,
+      src: "/lovable-uploads/9b45e6eb-01f7-4f52-96e2-2963cb67fa71.png",
+      alt: "Véhicule ASR Dépannage en intervention",
+      title: "Service Mobile",
+      description: "Notre véhicule d'intervention ASR avec équipements intégrés"
+    },
+    {
+      id: 19,
+      src: "/lovable-uploads/71337174-f764-4fa0-9b86-84f47d0b86a0.png",
+      alt: "Plateforme élévatrice MEGA 45",
+      title: "Équipement Haute Capacité",
+      description: "Plateforme élévatrice MEGA 45 pour interventions techniques"
+    },
+    {
+      id: 20,
+      src: "/lovable-uploads/ecdfdced-f37c-449c-bd31-6ddc4eb9bbe0.png",
+      alt: "Transport de camion frigorifique",
+      title: "Dépannage Frigorifique",
+      description: "Transport spécialisé de véhicules frigorifiques"
+    },
+    {
+      id: 21,
+      src: "/lovable-uploads/f7ab5f19-766b-4584-951f-043db55c52d6.png",
+      alt: "Dépanneuse ASR avec véhicule utilitaire",
+      title: "Transport Utilitaire",
+      description: "Transport sécurisé de véhicules utilitaires"
+    },
+    {
+      id: 22,
+      src: "/lovable-uploads/f7f13869-1827-44e8-bcf8-8d5055a9ac96.png",
+      alt: "Transport de véhicule utilitaire rouge",
+      title: "Dépannage Multi-Véhicules",
+      description: "Transport professionnel de tous types de véhicules utilitaires"
+    },
+    {
+      id: 23,
+      src: "/lovable-uploads/420c9f45-337f-441f-95cd-fd25102003dc.png",
+      alt: "Camion FIAT sur plateau ASR",
+      title: "Dépannage Commercial",
+      description: "Transport de véhicules commerciaux et utilitaires"
+    },
+    {
+      id: 24,
+      src: "/lovable-uploads/21405c3c-10d8-4935-881e-00b51ca5b8a8.png",
+      alt: "Transport ASR dans paysage montagnard",
+      title: "Intervention Régionale",
+      description: "Nos services de dépannage dans toute la région Auvergne-Rhône-Alpes"
     }
   ];
 
