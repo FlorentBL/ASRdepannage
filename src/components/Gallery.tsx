@@ -7,30 +7,42 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Exemple d'images d'intervention - à remplacer par de vraies photos
   const interventionPhotos = [
     {
       id: 1,
-      src: "/lovable-uploads/6f44ce59-e97b-4220-993c-0f1ecd7ec2cd.png",
-      alt: "Dépannage poids lourd sur autoroute",
-      title: "Intervention Poids Lourd",
-      description: "Dépannage d'un poids lourd en panne sur l'autoroute A6"
+      src: "/lovable-uploads/317c5ae6-02bc-46af-a294-f51dac611536.png",
+      alt: "Transport de véhicules par ASR Dépannage",
+      title: "Transport Multi-Véhicules",
+      description: "Notre camion plateau transportant plusieurs véhicules lors d'une intervention"
     },
     {
       id: 2,
-      src: "/assets/hero-towing.jpg",
-      alt: "Remorquage véhicule léger",
-      title: "Remorquage VL",
-      description: "Remorquage d'un véhicule léger suite à accident"
+      src: "/lovable-uploads/7a536816-98a7-45b6-abfd-51256b91c756.png",
+      alt: "Intervention ASR avec véhicule sur plateau",
+      title: "Dépannage Professionnel",
+      description: "Intervention de remorquage avec notre véhicule spécialisé ASR"
     },
     {
       id: 3,
-      src: "/assets/tow-truck-fleet.jpg",
-      alt: "Flotte de véhicules de dépannage",
-      title: "Notre Flotte",
-      description: "Nos véhicules spécialisés prêts à intervenir"
+      src: "/lovable-uploads/8cb8221f-447f-4efa-a168-c06919b4462d.png",
+      alt: "Flotte de véhicules ASR Dépannage",
+      title: "Notre Flotte Professionnelle",
+      description: "Aperçu de notre flotte de véhicules de dépannage Mercedes et Iveco"
     },
-    // Ajouter plus d'images selon les besoins
+    {
+      id: 4,
+      src: "/lovable-uploads/d5ba74bc-48bf-459a-b902-1935a4bf91a9.png",
+      alt: "Camion ASR en intervention industrielle",
+      title: "Intervention Industrielle",
+      description: "Notre équipe intervient dans tous types d'environnements industriels"
+    },
+    {
+      id: 5,
+      src: "/lovable-uploads/859ea3f9-2429-49e4-8d58-37569097dca8.png",
+      alt: "Transport de véhicules haut de gamme",
+      title: "Transport Sécurisé",
+      description: "Transport professionnel de véhicules avec notre plateforme spécialisée"
+    }
   ];
 
   const openLightbox = (index: number) => {
