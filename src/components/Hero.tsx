@@ -1,6 +1,6 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-towing.jpg";
+import heroImage from "/assets/asr-logo-transparent.png";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Intervention de dépannage poids lourd sur autoroute"
+          alt="Camion Mercedes ASR - Spécialiste dépannage poids lourds Rhône-Alpes"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/30" />
