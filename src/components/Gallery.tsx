@@ -42,6 +42,69 @@ const Gallery = () => {
       alt: "Transport de véhicules haut de gamme",
       title: "Transport Sécurisé",
       description: "Transport professionnel de véhicules avec notre plateforme spécialisée"
+    },
+    {
+      id: 6,
+      src: "/lovable-uploads/f9bbde8e-30b6-4909-bf9c-b271ef4020b4.png",
+      alt: "Remorque frigorifique en préparation",
+      title: "Remorques Spécialisées",
+      description: "Nos équipements pour le transport de marchandises sensibles"
+    },
+    {
+      id: 7,
+      src: "/lovable-uploads/1ae7f58a-6fa0-47d8-86ef-4f76a07a21ec.png",
+      alt: "Ensemble routier ASR",
+      title: "Transport Longue Distance",
+      description: "Nos tracteurs et remorques pour les missions longue distance"
+    },
+    {
+      id: 8,
+      src: "/lovable-uploads/7836eba2-a7da-47f2-b413-e75b371eb469.png",
+      alt: "Dépanneuse ASR transportant une remorque",
+      title: "Dépannage Poids Lourds",
+      description: "Intervention spécialisée pour le transport de remorques et poids lourds"
+    },
+    {
+      id: 9,
+      src: "/lovable-uploads/9869bfa0-b6b0-4b00-b3f2-f7b7b27f874e.png",
+      alt: "Intervention nocturne ASR",
+      title: "Service 24h/24",
+      description: "Nos équipes interviennent de jour comme de nuit pour votre sécurité"
+    },
+    {
+      id: 10,
+      src: "/lovable-uploads/9c4e2a59-596e-4e43-877f-8c1889f8bfc2.png",
+      alt: "Équipe ASR en action",
+      title: "Intervention Coordonnée",
+      description: "Nos équipes professionnelles coordonnent chaque intervention"
+    },
+    {
+      id: 11,
+      src: "/lovable-uploads/cf1ea782-eb21-41aa-b0dd-0407ab8b93ab.png",
+      alt: "Dépannage avec équipe au sol",
+      title: "Expertise Technique",
+      description: "Nos techniciens expérimentés assurent des interventions sécurisées"
+    },
+    {
+      id: 12,
+      src: "/lovable-uploads/fbfd1c89-21bf-4426-b5a9-a5f5e379728d.png",
+      alt: "Transport de poids lourd ASR",
+      title: "Dépannage Lourd",
+      description: "Transport et dépannage de véhicules industriels et poids lourds"
+    },
+    {
+      id: 13,
+      src: "/lovable-uploads/f2ed8584-b546-4c4c-b9b5-c66ec647fcaa.png",
+      alt: "Dépanneuse MEGA 45 en intervention",
+      title: "Équipement Spécialisé",
+      description: "Nos dépanneuses haute capacité pour toutes situations"
+    },
+    {
+      id: 14,
+      src: "/lovable-uploads/ea4fe7b6-2046-417c-aaff-d971f80f262f.png",
+      alt: "Camion frigorifique en transport",
+      title: "Transport Frigorifique",
+      description: "Spécialisation dans le transport et dépannage de véhicules frigorifiques"
     }
   ];
 
