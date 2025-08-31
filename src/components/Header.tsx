@@ -9,10 +9,8 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Services", href: "/services" },
-    { name: "Zone", href: "/zone" },
-    { name: "Flotte", href: "/flotte" },
-    { name: "Pros", href: "/clients-pros" },
+    { name: "Accueil", href: "/" },
+    { name: "Galerie", href: "/galerie" },
     { name: "Contact", href: "/contact" },
   ];
 
