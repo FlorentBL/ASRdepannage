@@ -78,9 +78,9 @@ const Services = () => {
                         className="border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-bounce group-hover:shadow-button"
                         asChild
                       >
-                        <a href="tel:[NUM_TEL]" className="flex items-center space-x-2">
+                        <a href="tel:0479855717" className="flex items-center space-x-2">
                           <Phone className="h-4 w-4" />
-                          <span>Besoin d'aide ? Appeler [NUM_TEL]</span>
+                          <span>Besoin d'aide ? Appeler 04 79 85 57 17</span>
                         </a>
                       </Button>
                     </div>
@@ -105,7 +105,7 @@ const Services = () => {
               className="gradient-yellow hover:shadow-button transition-bounce font-inter font-bold"
               asChild
             >
-              <a href="tel:[NUM_TEL]" className="flex items-center space-x-2">
+              <a href="tel:0479855717" className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
                 <span>📞 Intervention immédiate</span>
               </a>

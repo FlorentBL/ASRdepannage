@@ -38,9 +38,8 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl lg:text-2xl text-muted-foreground mb-10 font-inter max-w-3xl">
-            Intervention rapide en <span className="text-primary font-semibold">Savoie</span> et{" "}
-            <span className="text-primary font-semibold">Rhône-Alpes</span> :{" "}
-            relevage, treuillage, levage, assistance.
+            Intervention rapide en <span className="text-primary font-semibold">Rhône-Alpes</span> au départ de{" "}
+            <span className="text-primary font-semibold">Chambéry</span>. Rapatriements depuis l'Italie.
           </p>
 
           {/* CTA Buttons */}
@@ -50,9 +49,9 @@ const Hero = () => {
               className="gradient-yellow hover:shadow-button transition-bounce text-lg font-inter font-bold px-8 py-4 h-14"
               asChild
             >
-              <a href="tel:[NUM_TEL]" className="flex items-center space-x-3">
+              <a href="tel:0479855717" className="flex items-center space-x-3">
                 <Phone className="h-6 w-6" />
-                <span>📞 Appeler [NUM_TEL]</span>
+                <span>📞 Appeler 04 79 85 57 17</span>
               </a>
             </Button>
 
@@ -73,28 +72,28 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-12 pt-8 border-t border-border/30">
             <div className="text-center">
               <div className="text-2xl lg:text-3xl font-montserrat font-bold text-primary mb-1">
-                Depuis [ANNÉE]
+                24/7
               </div>
               <div className="text-sm text-muted-foreground font-inter">
-                Années d'expérience
+                Disponibilité continue
               </div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-border/50" />
             <div className="text-center">
               <div className="text-2xl lg:text-3xl font-montserrat font-bold text-primary mb-1">
-                [X] véhicules
+                Rhône-Alpes
               </div>
               <div className="text-sm text-muted-foreground font-inter">
-                Flotte spécialisée
+                Zone d'intervention
               </div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-border/50" />
             <div className="text-center">
               <div className="text-2xl lg:text-3xl font-montserrat font-bold text-primary mb-1">
-                [X] interventions/an
+                Poids Lourds
               </div>
               <div className="text-sm text-muted-foreground font-inter">
-                Missions accomplies
+                Spécialité
               </div>
             </div>
           </div>
