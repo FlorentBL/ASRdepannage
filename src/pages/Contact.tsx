@@ -79,7 +79,7 @@ const Contact = () => {
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary" />
                   <div>
-                    <div className="font-inter font-medium text-foreground">[EMAIL]</div>
+                    <div className="font-inter font-medium text-foreground">asr.alpes@wanadoo.fr</div>
                     <div className="text-sm text-muted-foreground">Devis & informations</div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary mt-1" />
                   <div>
-                    <div className="font-inter font-medium text-foreground">[ADRESSE_SIEGE]</div>
+                    <div className="font-inter font-medium text-foreground">1482 Rte d'Apremont<br />73490 La Ravoire</div>
                     <div className="text-sm text-muted-foreground">Siège social</div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                   <div>
                     <div className="font-inter font-medium text-foreground">24h/24 - 7j/7</div>
                     <div className="text-sm text-muted-foreground">Permanence d'urgence</div>
-                    <div className="text-sm text-muted-foreground mt-1">[HORAIRES]</div>
+                    <div className="text-sm text-muted-foreground mt-1">Ouvert 24h/24</div>
                   </div>
                 </div>
               </CardContent>

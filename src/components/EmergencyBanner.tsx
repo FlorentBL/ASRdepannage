@@ -11,9 +11,6 @@ const EmergencyBanner = () => {
               <Clock className="h-4 w-4 animate-pulse" />
               <span className="font-semibold">Disponible 24h/24 – 7j/7</span>
             </div>
-            <div className="hidden sm:block text-xs opacity-90">
-              Temps de prise d'appel &lt; 1 min
-            </div>
           </div>
           
           <Button

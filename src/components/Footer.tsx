@@ -34,22 +34,22 @@ const Footer = () => {
             </h3>
             <div className="space-y-4">
               <a 
-                href="tel:[NUM_TEL]" 
+                href="tel:0479855717" 
                 className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-smooth group"
               >
                 <Phone className="h-4 w-4 text-primary group-hover:animate-pulse" />
-                <span className="font-inter">[NUM_TEL]</span>
+                <span className="font-inter">04 79 85 57 17</span>
               </a>
               <a 
-                href="mailto:[EMAIL]" 
+                href="mailto:asr.alpes@wanadoo.fr" 
                 className="flex items-center space-x-3 text-sm text-muted-foreground hover:text-primary transition-smooth group"
               >
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="font-inter">[EMAIL]</span>
+                <span className="font-inter">asr.alpes@wanadoo.fr</span>
               </a>
               <div className="flex items-start space-x-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="font-inter">[ADRESSE_SIEGE]</span>
+                <span className="font-inter">1482 Rte d'Apremont<br />73490 La Ravoire</span>
               </div>
               <div className="flex items-start space-x-3 text-sm text-muted-foreground">
                 <Clock className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
