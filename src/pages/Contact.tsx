@@ -9,18 +9,15 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "sonner";
-
 const contactSchema = z.object({
   nom: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
   telephone: z.string().min(10, "Veuillez entrer un numéro de téléphone valide"),
   email: z.string().email("Veuillez entrer un email valide").optional().or(z.literal("")),
   lieu: z.string().min(3, "Veuillez préciser le lieu d'intervention"),
   vehicule: z.string().min(2, "Veuillez préciser le type de véhicule"),
-  probleme: z.string().min(10, "Veuillez décrire le problème en détail"),
+  probleme: z.string().min(10, "Veuillez décrire le problème en détail")
 });
-
 type ContactFormData = z.infer<typeof contactSchema>;
-
 const Contact = () => {
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
@@ -30,10 +27,9 @@ const Contact = () => {
       email: "",
       lieu: "",
       vehicule: "",
-      probleme: "",
-    },
+      probleme: ""
+    }
   });
-
   const generateMailto = (data: ContactFormData) => {
     const subject = encodeURIComponent(`[URGENCE/DEVIS] Demande d'intervention - ${data.nom}`);
     const body = encodeURIComponent(`
@@ -61,18 +57,14 @@ Merci de me recontacter rapidement pour organiser l'intervention.
 Cordialement,
 ${data.nom}
     `);
-
     return `mailto:asr.alpes@wanadoo.fr?subject=${subject}&body=${body}`;
   };
-
   const onSubmit = (data: ContactFormData) => {
     const mailtoLink = generateMailto(data);
     window.location.href = mailtoLink;
     toast.success("Email ouvert avec vos informations !");
   };
-
-  return (
-    <div className="min-h-screen py-20">
+  return <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -108,28 +100,14 @@ ${data.nom}
                   </div>
                 </div>
 
-                <Button 
-                  size="lg" 
-                  className="w-full gradient-yellow hover:shadow-button transition-bounce font-inter font-bold"
-                  asChild
-                >
+                <Button size="lg" className="w-full gradient-yellow hover:shadow-button transition-bounce font-inter font-bold" asChild>
                   <a href="tel:0479855717" className="flex items-center justify-center space-x-3">
                     <Phone className="h-5 w-5" />
                     <span>📞 Appeler maintenant</span>
                   </a>
                 </Button>
 
-                <div className="flex items-center space-x-4 p-4 bg-secondary/20 rounded-lg">
-                  <MessageCircle className="h-6 w-6 text-secondary" />
-                  <div>
-                    <div className="text-lg font-montserrat font-semibold text-foreground">
-                      WhatsApp Urgence
-                    </div>
-                    <div className="text-sm text-muted-foreground font-inter">
-                      Envoyez photos + localisation
-                    </div>
-                  </div>
-                </div>
+                
               </CardContent>
             </Card>
 
@@ -200,146 +178,79 @@ ${data.nom}
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <FormField
-                        control={form.control}
-                        name="nom"
-                        render={({ field }) => (
-                          <FormItem>
+                      <FormField control={form.control} name="nom" render={({
+                      field
+                    }) => <FormItem>
                             <FormLabel className="font-inter font-medium">Nom *</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder="Votre nom"
-                                className="bg-background border-border/50 focus:border-primary"
-                                {...field}
-                              />
+                              <Input placeholder="Votre nom" className="bg-background border-border/50 focus:border-primary" {...field} />
                             </FormControl>
                             <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="telephone"
-                        render={({ field }) => (
-                          <FormItem>
+                          </FormItem>} />
+                      <FormField control={form.control} name="telephone" render={({
+                      field
+                    }) => <FormItem>
                             <FormLabel className="font-inter font-medium">Téléphone *</FormLabel>
                             <FormControl>
-                              <Input 
-                                type="tel" 
-                                placeholder="Votre numéro"
-                                className="bg-background border-border/50 focus:border-primary"
-                                {...field}
-                              />
+                              <Input type="tel" placeholder="Votre numéro" className="bg-background border-border/50 focus:border-primary" {...field} />
                             </FormControl>
                             <FormMessage />
-                          </FormItem>
-                        )}
-                      />
+                          </FormItem>} />
                     </div>
 
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="email" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel className="font-inter font-medium">Email</FormLabel>
                           <FormControl>
-                            <Input 
-                              type="email" 
-                              placeholder="votre@email.com"
-                              className="bg-background border-border/50 focus:border-primary"
-                              {...field}
-                            />
+                            <Input type="email" placeholder="votre@email.com" className="bg-background border-border/50 focus:border-primary" {...field} />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="lieu"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="lieu" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel className="font-inter font-medium">Lieu d'intervention *</FormLabel>
                           <FormControl>
-                            <Input 
-                              placeholder="Ville, autoroute, adresse précise..."
-                              className="bg-background border-border/50 focus:border-primary"
-                              {...field}
-                            />
+                            <Input placeholder="Ville, autoroute, adresse précise..." className="bg-background border-border/50 focus:border-primary" {...field} />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="vehicule"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="vehicule" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel className="font-inter font-medium">Type de véhicule *</FormLabel>
                           <FormControl>
-                            <Input 
-                              placeholder="VL, utilitaire, poids lourd, bus..."
-                              className="bg-background border-border/50 focus:border-primary"
-                              {...field}
-                            />
+                            <Input placeholder="VL, utilitaire, poids lourd, bus..." className="bg-background border-border/50 focus:border-primary" {...field} />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="probleme"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="probleme" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel className="font-inter font-medium">Description du problème *</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder="Panne, accident, véhicule à remorquer..."
-                              rows={4}
-                              className="bg-background border-border/50 focus:border-primary resize-none"
-                              {...field}
-                            />
+                            <Textarea placeholder="Panne, accident, véhicule à remorquer..." rows={4} className="bg-background border-border/50 focus:border-primary resize-none" {...field} />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
                     <div className="space-y-2">
                       <Label htmlFor="photos" className="font-inter font-medium">Photos (recommandé)</Label>
-                      <Input 
-                        id="photos" 
-                        type="file" 
-                        multiple 
-                        accept="image/*"
-                        className="bg-background border-border/50 focus:border-primary"
-                      />
+                      <Input id="photos" type="file" multiple accept="image/*" className="bg-background border-border/50 focus:border-primary" />
                       <div className="text-xs text-muted-foreground font-inter">
                         Photos du véhicule et de la situation - Joindre manuellement à l'email
                       </div>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                      <Button 
-                        type="submit"
-                        size="lg" 
-                        className="gradient-yellow hover:shadow-button transition-bounce font-inter font-bold flex-1"
-                      >
+                      <Button type="submit" size="lg" className="gradient-yellow hover:shadow-button transition-bounce font-inter font-bold flex-1">
                         📧 Ouvrir l'email
                       </Button>
-                      <Button 
-                        type="button"
-                        variant="outline"
-                        size="lg" 
-                        className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce"
-                        asChild
-                      >
+                      <Button type="button" variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce" asChild>
                         <a href="tel:0479855717">📞 Urgence ? Appeler</a>
                       </Button>
                     </div>
@@ -350,8 +261,6 @@ ${data.nom}
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
