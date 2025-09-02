@@ -23,8 +23,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/4e4212a6-7d5f-4427-98a6-fcb9fdc2fac7.png" 
-              alt="FBL Digital Logo" 
+              src="/lovable-uploads/1fefd9ec-ef33-4ce3-806d-68fee8826360.png" 
+              alt="ASR Dépannage Logo" 
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
