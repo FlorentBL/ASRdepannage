@@ -13,7 +13,7 @@ const CtaButton = ({ href, children, className, ...props }: CtaButtonProps) => {
     <Button
       size="lg"
       className={cn(
-        "gradient-yellow hover:shadow-button transition-bounce text-lg font-inter font-bold px-8 py-4 h-14",
+        "gradient-yellow hover:shadow-button transition-bounce text-base sm:text-lg font-inter font-bold px-4 sm:px-8 py-4",
         className
       )}
       asChild
