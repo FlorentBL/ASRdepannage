@@ -241,15 +241,6 @@ const Gallery = () => {
                     alt={photo.alt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-smooth">
-                    <h3 className="font-montserrat font-bold text-lg mb-1">
-                      {photo.title}
-                    </h3>
-                    <p className="font-inter text-sm text-white/90">
-                      {photo.description}
-                    </p>
-                  </div>
                   <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-smooth">
                     <Camera className="h-4 w-4 text-white" />
                   </div>
@@ -330,15 +321,9 @@ const Gallery = () => {
                 <ChevronRight className="h-8 w-8" />
               </Button>
 
-              {/* Image Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                <h3 className="text-white font-montserrat font-bold text-xl mb-2">
-                  {photos[selectedImage].title}
-                </h3>
-                <p className="text-white/90 font-inter">
-                  {photos[selectedImage].description}
-                </p>
-                <div className="text-white/70 text-sm mt-2">
+              {/* Image Counter */}
+              <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-3 py-1">
+                <div className="text-white text-sm font-inter">
                   {selectedImage + 1} / {photos.length}
                 </div>
               </div>
