@@ -18,168 +18,168 @@ const Gallery = () => {
   const photos: Photo[] = [
     {
       id: 1,
-      src: "/uploads/317c5ae6-02bc-46af-a294-f51dac611536.png",
+      src: "/uploads/image-05.png",
       alt: "Transport de véhicules par ASR Dépannage",
       title: "Transport Multi-Véhicules",
       description: "Notre camion plateau transportant plusieurs véhicules lors d'une intervention"
     },
     {
       id: 2,
-      src: "/uploads/7a536816-98a7-45b6-abfd-51256b91c756.png",
+      src: "/uploads/image-12.png",
       alt: "Intervention ASR avec véhicule sur plateau",
       title: "Dépannage Professionnel",
       description: "Intervention de remorquage avec notre véhicule spécialisé ASR"
     },
     {
       id: 3,
-      src: "/uploads/8cb8221f-447f-4efa-a168-c06919b4462d.png",
+      src: "/uploads/image-14.png",
       alt: "Flotte de véhicules ASR Dépannage",
       title: "Notre Flotte Professionnelle",
       description: "Aperçu de notre flotte de véhicules de dépannage Mercedes et Iveco"
     },
     {
       id: 4,
-      src: "/uploads/d5ba74bc-48bf-459a-b902-1935a4bf91a9.png",
+      src: "/uploads/image-19.png",
       alt: "Camion ASR en intervention industrielle",
       title: "Intervention Industrielle",
       description: "Notre équipe intervient dans tous types d'environnements industriels"
     },
     {
       id: 5,
-      src: "/uploads/859ea3f9-2429-49e4-8d58-37569097dca8.png",
+      src: "/uploads/image-13.png",
       alt: "Transport de véhicules haut de gamme",
       title: "Transport Sécurisé",
       description: "Transport professionnel de véhicules avec notre plateforme spécialisée"
     },
     {
       id: 6,
-      src: "/uploads/f9bbde8e-30b6-4909-bf9c-b271ef4020b4.png",
+      src: "/uploads/image-28.png",
       alt: "Remorque frigorifique en préparation",
       title: "Remorques Spécialisées",
       description: "Nos équipements pour le transport de marchandises sensibles"
     },
     {
       id: 7,
-      src: "/uploads/1ae7f58a-6fa0-47d8-86ef-4f76a07a21ec.png",
+      src: "/uploads/image-02.png",
       alt: "Ensemble routier ASR",
       title: "Transport Longue Distance",
       description: "Nos tracteurs et remorques pour les missions longue distance"
     },
     {
       id: 8,
-      src: "/uploads/7836eba2-a7da-47f2-b413-e75b371eb469.png",
+      src: "/uploads/image-11.png",
       alt: "Dépanneuse ASR transportant une remorque",
       title: "Dépannage Poids Lourds",
       description: "Intervention spécialisée pour le transport de remorques et poids lourds"
     },
     {
       id: 9,
-      src: "/uploads/9869bfa0-b6b0-4b00-b3f2-f7b7b27f874e.png",
+      src: "/uploads/image-15.png",
       alt: "Intervention nocturne ASR",
       title: "Service 24h/24",
       description: "Nos équipes interviennent de jour comme de nuit pour votre sécurité"
     },
     {
       id: 10,
-      src: "/uploads/9c4e2a59-596e-4e43-877f-8c1889f8bfc2.png",
+      src: "/uploads/image-17.png",
       alt: "Équipe ASR en action",
       title: "Intervention Coordonnée",
       description: "Nos équipes professionnelles coordonnent chaque intervention"
     },
     {
       id: 11,
-      src: "/uploads/cf1ea782-eb21-41aa-b0dd-0407ab8b93ab.png",
+      src: "/uploads/image-18.png",
       alt: "Dépannage avec équipe au sol",
       title: "Expertise Technique",
       description: "Nos techniciens expérimentés assurent des interventions sécurisées"
     },
     {
       id: 12,
-      src: "/uploads/fbfd1c89-21bf-4426-b5a9-a5f5e379728d.png",
+      src: "/uploads/image-29.png",
       alt: "Transport de poids lourd ASR",
       title: "Dépannage Lourd",
       description: "Transport et dépannage de véhicules industriels et poids lourds"
     },
     {
       id: 13,
-      src: "/uploads/f2ed8584-b546-4c4c-b9b5-c66ec647fcaa.png",
+      src: "/uploads/image-24.png",
       alt: "Dépanneuse MEGA 45 en intervention",
       title: "Équipement Spécialisé",
       description: "Nos dépanneuses haute capacité pour toutes situations"
     },
     {
       id: 14,
-      src: "/uploads/ea4fe7b6-2046-417c-aaff-d971f80f262f.png",
+      src: "/uploads/image-22.png",
       alt: "Camion frigorifique en transport",
       title: "Transport Frigorifique",
       description: "Spécialisation dans le transport et dépannage de véhicules frigorifiques"
     },
     {
       id: 15,
-      src: "/uploads/357948da-0b73-4921-a140-5371b5270d80.png",
+      src: "/uploads/image-06.png",
       alt: "Intervention nocturne avec plateforme élévatrice",
       title: "Équipement de Levage",
       description: "Intervention nocturne avec plateforme élévatrice spécialisée"
     },
     {
       id: 16,
-      src: "/uploads/f5f49cbe-7dc4-41bd-a317-e52749d2086e.png",
+      src: "/uploads/image-25.png",
       alt: "Plateforme élévatrice ASR en action",
       title: "Levage Professionnel",
       description: "Notre plateforme élévatrice pour interventions en hauteur"
     },
     {
       id: 17,
-      src: "/uploads/6d5d977c-c7ce-4ca3-84d3-d9ac1f8a6bbe.png",
+      src: "/uploads/image-08.png",
       alt: "Parc de matériel ASR Dépannage",
       title: "Matériel Spécialisé",
       description: "Notre parc de plateformes et équipements spécialisés"
     },
     {
       id: 18,
-      src: "/uploads/9b45e6eb-01f7-4f52-96e2-2963cb67fa71.png",
+      src: "/uploads/image-16.png",
       alt: "Véhicule ASR Dépannage en intervention",
       title: "Service Mobile",
       description: "Notre véhicule d'intervention ASR avec équipements intégrés"
     },
     {
       id: 19,
-      src: "/uploads/71337174-f764-4fa0-9b86-84f47d0b86a0.png",
+      src: "/uploads/image-10.png",
       alt: "Plateforme élévatrice MEGA 45",
       title: "Équipement Haute Capacité",
       description: "Plateforme élévatrice MEGA 45 pour interventions techniques"
     },
     {
       id: 20,
-      src: "/uploads/ecdfdced-f37c-449c-bd31-6ddc4eb9bbe0.png",
+      src: "/uploads/image-23.png",
       alt: "Transport de camion frigorifique",
       title: "Dépannage Frigorifique",
       description: "Transport spécialisé de véhicules frigorifiques"
     },
     {
       id: 21,
-      src: "/uploads/f7ab5f19-766b-4584-951f-043db55c52d6.png",
+      src: "/uploads/image-26.png",
       alt: "Dépanneuse ASR avec véhicule utilitaire",
       title: "Transport Utilitaire",
       description: "Transport sécurisé de véhicules utilitaires"
     },
     {
       id: 22,
-      src: "/uploads/f7f13869-1827-44e8-bcf8-8d5055a9ac96.png",
+      src: "/uploads/image-27.png",
       alt: "Transport de véhicule utilitaire rouge",
       title: "Dépannage Multi-Véhicules",
       description: "Transport professionnel de tous types de véhicules utilitaires"
     },
     {
       id: 23,
-      src: "/uploads/420c9f45-337f-441f-95cd-fd25102003dc.png",
+      src: "/uploads/image-07.png",
       alt: "Camion FIAT sur plateau ASR",
       title: "Dépannage Commercial",
       description: "Transport de véhicules commerciaux et utilitaires"
     },
     {
       id: 24,
-      src: "/uploads/21405c3c-10d8-4935-881e-00b51ca5b8a8.png",
+      src: "/uploads/image-04.png",
       alt: "Transport ASR dans paysage montagnard",
       title: "Intervention Régionale",
       description: "Nos services de dépannage dans toute la région Auvergne-Rhône-Alpes"
