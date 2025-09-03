@@ -107,7 +107,7 @@ const Services = () => {
             >
               <a href="tel:0479855717" className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
-                <span>📞 Intervention immédiate</span>
+                <span>Intervention immédiate</span>
               </a>
             </Button>
             <Button

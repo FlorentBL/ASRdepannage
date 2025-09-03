@@ -51,7 +51,7 @@ const Hero = () => {
             >
               <a href="tel:0479855717" className="flex items-center space-x-3">
                 <Phone className="h-6 w-6" />
-                <span>📞 Appeler 04 79 85 57 17</span>
+                <span>Appeler 04 79 85 57 17</span>
               </a>
             </Button>
 

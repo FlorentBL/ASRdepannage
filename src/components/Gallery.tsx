@@ -284,50 +284,68 @@ const Gallery = () => {
 
       {/* Lightbox Modal */}
       <Dialog open={selectedImage !== null} onOpenChange={closeLightbox}>
-        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">
+        <DialogContent className="max-w-6xl w-full p-2 bg-black/90 border-none flex flex-col">
           {selectedImage !== null && (
-            <div className="relative">
-              <img
-                src={photos[selectedImage].src}
-                alt={photos[selectedImage].alt}
-                className="w-full h-auto max-h-[80vh] object-contain"
-              />
-              
-              {/* Close Button */}
-              <Button
-                variant="ghost"
-                size="sm"
-                className="absolute top-4 right-4 text-white hover:bg-white/20"
-                onClick={closeLightbox}
-              >
-                <X className="h-6 w-6" />
-              </Button>
+            <>
+              <div className="relative flex-grow flex items-center justify-center">
+                <img
+                  key={photos[selectedImage].src}
+                  src={photos[selectedImage].src}
+                  alt={photos[selectedImage].alt}
+                  className="w-full h-auto max-h-[75vh] object-contain lightbox-image-fade"
+                />
+                
+                
 
-              {/* Navigation Buttons */}
-              <Button
-                variant="ghost"
-                size="sm"
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white hover:bg-white/20"
-                onClick={previousImage}
-              >
-                <ChevronLeft className="h-8 w-8" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white hover:bg-white/20"
-                onClick={nextImage}
-              >
-                <ChevronRight className="h-8 w-8" />
-              </Button>
+                {/* Navigation Buttons */}
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white hover:bg-white/20"
+                  onClick={previousImage}
+                >
+                  <ChevronLeft className="h-8 w-8" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white hover:bg-white/20"
+                  onClick={nextImage}
+                >
+                  <ChevronRight className="h-8 w-8" />
+                </Button>
 
-              {/* Image Counter */}
-              <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-3 py-1">
-                <div className="text-white text-sm font-inter">
-                  {selectedImage + 1} / {photos.length}
+                {/* Image Counter */}
+                <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-3 py-1">
+                  <div className="text-white text-sm font-inter">
+                    {selectedImage + 1} / {photos.length}
+                  </div>
                 </div>
               </div>
-            </div>
+
+              {/* Thumbnail Strip */}
+              <div className="w-full overflow-x-auto py-2">
+                <div className="flex justify-center space-x-2 px-2">
+                  {photos.map((photo, index) => (
+                    <div
+                      key={photo.id}
+                      onClick={() => setSelectedImage(index)}
+                      className="cursor-pointer flex-shrink-0"
+                    >
+                      <img
+                        src={photo.src}
+                        alt={photo.alt}
+                        className={`w-20 h-14 object-cover rounded-md border-2 transition-all ${
+                          selectedImage === index
+                            ? "border-primary scale-105"
+                            : "border-transparent hover:border-white/50"
+                        }`}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </>
           )}
         </DialogContent>
       </Dialog>
