@@ -67,37 +67,17 @@ const Footer = () => {
               Services
             </h3>
             <ul className="space-y-3">
-              <li>
-                <Link 
-                  to="/services/remorquage-vl" 
-                  className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-                >
-                  Remorquage VL & Utilitaires
-                </Link>
+              <li className="text-sm text-muted-foreground font-inter">
+                Remorquage VL & Utilitaires
               </li>
-              <li>
-                <Link 
-                  to="/services/poids-lourds" 
-                  className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-                >
-                  Dépannage Poids Lourds
-                </Link>
+              <li className="text-sm text-muted-foreground font-inter">
+                Dépannage Poids Lourds
               </li>
-              <li>
-                <Link 
-                  to="/services/relevage" 
-                  className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-                >
-                  Relevage / Treuillage
-                </Link>
+              <li className="text-sm text-muted-foreground font-inter">
+                Relevage / Treuillage
               </li>
-              <li>
-                <Link 
-                  to="/services/levage" 
-                  className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-                >
-                  Levage & Assistance
-                </Link>
+              <li className="text-sm text-muted-foreground font-inter">
+                Levage & Assistance
               </li>
             </ul>
           </div>
@@ -123,26 +103,6 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground font-inter">
               © 2024 ASR Dépannage & Levage. Tous droits réservés.
-            </div>
-            <div className="flex space-x-6">
-              <Link 
-                to="/mentions-legales" 
-                className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-              >
-                Mentions légales
-              </Link>
-              <Link 
-                to="/politique-confidentialite" 
-                className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-              >
-                Confidentialité
-              </Link>
-              <Link 
-                to="/cookies" 
-                className="text-sm text-muted-foreground hover:text-primary transition-smooth font-inter"
-              >
-                Cookies
-              </Link>
             </div>
           </div>
         </div>
