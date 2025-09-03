@@ -73,6 +73,7 @@ const Header = () => {
               size="sm"
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>

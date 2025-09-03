@@ -1,6 +1,7 @@
-import { Truck, Move3D, Wrench, Phone, Construction } from "lucide-react";
+import { Truck, Move3D, Wrench, Construction, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { CtaButton } from "@/components/ui/CtaButton";
 
 const Services = () => {
   const services = [
@@ -100,23 +101,17 @@ const Services = () => {
             Notre équipe d'intervention est disponible 24h/24 pour tous vos besoins de dépannage
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="gradient-yellow hover:shadow-button transition-bounce font-inter font-bold"
-              asChild
-            >
-              <a href="tel:0479855717" className="flex items-center space-x-2">
-                <Phone className="h-5 w-5" />
-                <span>Intervention immédiate</span>
-              </a>
-            </Button>
+            <CtaButton href="tel:0479855717">Intervention immédiate</CtaButton>
             <Button
               variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce text-lg font-inter font-semibold px-8 py-4 h-14"
               asChild
             >
-              <a href="/contact">Demander un devis</a>
+              <a href="/contact" className="flex items-center space-x-3">
+                <MessageCircle className="h-5 w-5" />
+                <span>Demander un devis</span>
+              </a>
             </Button>
           </div>
         </div>

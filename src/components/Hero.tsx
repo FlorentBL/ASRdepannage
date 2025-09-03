@@ -1,5 +1,6 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CtaButton } from "@/components/ui/CtaButton";
 import heroImage from "/uploads/image-21.png";
 
 const Hero = () => {
@@ -44,16 +45,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button
-              size="lg"
-              className="gradient-yellow hover:shadow-button transition-bounce text-lg font-inter font-bold px-8 py-4 h-14"
-              asChild
-            >
-              <a href="tel:0479855717" className="flex items-center space-x-3">
-                <Phone className="h-6 w-6" />
-                <span>Appeler 04 79 85 57 17</span>
-              </a>
-            </Button>
+            <CtaButton href="tel:0479855717">Appeler 04 79 85 57 17</CtaButton>
 
             <Button
               variant="outline"

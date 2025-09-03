@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CtaButton } from "@/components/ui/CtaButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -100,12 +101,9 @@ ${data.nom}
                   </div>
                 </div>
 
-                <Button size="lg" className="w-full gradient-yellow hover:shadow-button transition-bounce font-inter font-bold" asChild>
-                  <a href="tel:0479855717" className="flex items-center justify-center space-x-3">
-                    <Phone className="h-5 w-5" />
-                    <span>📞 Appeler maintenant</span>
-                  </a>
-                </Button>
+                <CtaButton href="tel:0479855717" className="w-full">
+                  Appeler maintenant
+                </CtaButton>
 
                 
               </CardContent>
