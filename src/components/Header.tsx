@@ -65,7 +65,7 @@ const Header = () => {
               <a href="tel:0479855717" className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <span className="hidden sm:inline">04 79 85 57 17</span>
-                <span className="sm:hidden">Appeler</span>
+                <span className="sm:hidden">04 79 85 57 17</span>
               </a>
             </Button>
             <Button 
@@ -77,7 +77,7 @@ const Header = () => {
               <a href="tel:0609595920" className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <span className="hidden sm:inline">06 09 59 59 20</span>
-                <span className="sm:hidden">Appeler</span>
+                <span className="sm:hidden">06 09 59 59 20</span>
               </a>
             </Button>
 
