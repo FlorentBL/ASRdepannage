@@ -3,6 +3,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,13 +24,14 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/uploads/image-03.png" 
+              src={logo} 
               alt="ASR Dépannage Logo" 
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
               <div className="text-xs text-muted-foreground">
-                24/7 • Savoie & Rhône-Alpes
+                24/7 • Savoie & Rhône-Alpes <br />
+                1482 route d’Apremont, 73490 La Ravoire
               </div>
             </div>
           </Link>

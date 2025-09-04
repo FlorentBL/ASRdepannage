@@ -17,172 +17,389 @@ const Gallery = () => {
 
   const photos: Photo[] = [
     {
-      id: 1,
-      src: "/uploads/image-05.png",
-      alt: "Transport de véhicules par ASR Dépannage",
-      title: "Transport Multi-Véhicules",
-      description: "Notre camion plateau transportant plusieurs véhicules lors d'une intervention"
+      "id": 1,
+      "src": "/uploads/105.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 1",
+      "title": "Intervention #1",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 2,
-      src: "/uploads/image-12.png",
-      alt: "Intervention ASR avec véhicule sur plateau",
-      title: "Dépannage Professionnel",
-      description: "Intervention de remorquage avec notre véhicule spécialisé ASR"
+      "id": 2,
+      "src": "/uploads/106.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 2",
+      "title": "Intervention #2",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 3,
-      src: "/uploads/image-14.png",
-      alt: "Flotte de véhicules ASR Dépannage",
-      title: "Notre Flotte Professionnelle",
-      description: "Aperçu de notre flotte de véhicules de dépannage Mercedes et Iveco"
+      "id": 3,
+      "src": "/uploads/11.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 3",
+      "title": "Intervention #3",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 4,
-      src: "/uploads/image-19.png",
-      alt: "Camion ASR en intervention industrielle",
-      title: "Intervention Industrielle",
-      description: "Notre équipe intervient dans tous types d'environnements industriels"
+      "id": 4,
+      "src": "/uploads/13.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 4",
+      "title": "Intervention #4",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 5,
-      src: "/uploads/image-13.png",
-      alt: "Transport de véhicules haut de gamme",
-      title: "Transport Sécurisé",
-      description: "Transport professionnel de véhicules avec notre plateforme spécialisée"
+      "id": 5,
+      "src": "/uploads/15.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 5",
+      "title": "Intervention #5",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 6,
-      src: "/uploads/image-28.png",
-      alt: "Remorque frigorifique en préparation",
-      title: "Remorques Spécialisées",
-      description: "Nos équipements pour le transport de marchandises sensibles"
+      "id": 6,
+      "src": "/uploads/16.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 6",
+      "title": "Intervention #6",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 7,
-      src: "/uploads/image-02.png",
-      alt: "Ensemble routier ASR",
-      title: "Transport Longue Distance",
-      description: "Nos tracteurs et remorques pour les missions longue distance"
+      "id": 7,
+      "src": "/uploads/19.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 7",
+      "title": "Intervention #7",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 8,
-      src: "/uploads/image-11.png",
-      alt: "Dépanneuse ASR transportant une remorque",
-      title: "Dépannage Poids Lourds",
-      description: "Intervention spécialisée pour le transport de remorques et poids lourds"
+      "id": 8,
+      "src": "/uploads/20.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 8",
+      "title": "Intervention #8",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 9,
-      src: "/uploads/image-15.png",
-      alt: "Intervention nocturne ASR",
-      title: "Service 24h/24",
-      description: "Nos équipes interviennent de jour comme de nuit pour votre sécurité"
+      "id": 9,
+      "src": "/uploads/21.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 9",
+      "title": "Intervention #9",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 10,
-      src: "/uploads/image-17.png",
-      alt: "Équipe ASR en action",
-      title: "Intervention Coordonnée",
-      description: "Nos équipes professionnelles coordonnent chaque intervention"
+      "id": 10,
+      "src": "/uploads/24.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 10",
+      "title": "Intervention #10",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 11,
-      src: "/uploads/image-18.png",
-      alt: "Dépannage avec équipe au sol",
-      title: "Expertise Technique",
-      description: "Nos techniciens expérimentés assurent des interventions sécurisées"
+      "id": 11,
+      "src": "/uploads/25.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 11",
+      "title": "Intervention #11",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 12,
-      src: "/uploads/image-29.png",
-      alt: "Transport de poids lourd ASR",
-      title: "Dépannage Lourd",
-      description: "Transport et dépannage de véhicules industriels et poids lourds"
+      "id": 12,
+      "src": "/uploads/26.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 12",
+      "title": "Intervention #12",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 13,
-      src: "/uploads/image-24.png",
-      alt: "Dépanneuse MEGA 45 en intervention",
-      title: "Équipement Spécialisé",
-      description: "Nos dépanneuses haute capacité pour toutes situations"
+      "id": 13,
+      "src": "/uploads/27.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 13",
+      "title": "Intervention #13",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 14,
-      src: "/uploads/image-22.png",
-      alt: "Camion frigorifique en transport",
-      title: "Transport Frigorifique",
-      description: "Spécialisation dans le transport et dépannage de véhicules frigorifiques"
+      "id": 14,
+      "src": "/uploads/28.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 14",
+      "title": "Intervention #14",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 15,
-      src: "/uploads/image-06.png",
-      alt: "Intervention nocturne avec plateforme élévatrice",
-      title: "Équipement de Levage",
-      description: "Intervention nocturne avec plateforme élévatrice spécialisée"
+      "id": 15,
+      "src": "/uploads/29.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 15",
+      "title": "Intervention #15",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 16,
-      src: "/uploads/image-25.png",
-      alt: "Plateforme élévatrice ASR en action",
-      title: "Levage Professionnel",
-      description: "Notre plateforme élévatrice pour interventions en hauteur"
+      "id": 16,
+      "src": "/uploads/30.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 16",
+      "title": "Intervention #16",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 17,
-      src: "/uploads/image-08.png",
-      alt: "Parc de matériel ASR Dépannage",
-      title: "Matériel Spécialisé",
-      description: "Notre parc de plateformes et équipements spécialisés"
+      "id": 17,
+      "src": "/uploads/31.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 17",
+      "title": "Intervention #17",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 18,
-      src: "/uploads/image-16.png",
-      alt: "Véhicule ASR Dépannage en intervention",
-      title: "Service Mobile",
-      description: "Notre véhicule d'intervention ASR avec équipements intégrés"
+      "id": 18,
+      "src": "/uploads/32.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 18",
+      "title": "Intervention #18",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 19,
-      src: "/uploads/image-10.png",
-      alt: "Plateforme élévatrice MEGA 45",
-      title: "Équipement Haute Capacité",
-      description: "Plateforme élévatrice MEGA 45 pour interventions techniques"
+      "id": 19,
+      "src": "/uploads/33.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 19",
+      "title": "Intervention #19",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 20,
-      src: "/uploads/image-23.png",
-      alt: "Transport de camion frigorifique",
-      title: "Dépannage Frigorifique",
-      description: "Transport spécialisé de véhicules frigorifiques"
+      "id": 20,
+      "src": "/uploads/34.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 20",
+      "title": "Intervention #20",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 21,
-      src: "/uploads/image-26.png",
-      alt: "Dépanneuse ASR avec véhicule utilitaire",
-      title: "Transport Utilitaire",
-      description: "Transport sécurisé de véhicules utilitaires"
+      "id": 21,
+      "src": "/uploads/35.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 21",
+      "title": "Intervention #21",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 22,
-      src: "/uploads/image-27.png",
-      alt: "Transport de véhicule utilitaire rouge",
-      title: "Dépannage Multi-Véhicules",
-      description: "Transport professionnel de tous types de véhicules utilitaires"
+      "id": 22,
+      "src": "/uploads/36.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 22",
+      "title": "Intervention #22",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 23,
-      src: "/uploads/image-07.png",
-      alt: "Camion FIAT sur plateau ASR",
-      title: "Dépannage Commercial",
-      description: "Transport de véhicules commerciaux et utilitaires"
+      "id": 23,
+      "src": "/uploads/37.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 23",
+      "title": "Intervention #23",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     },
     {
-      id: 24,
-      src: "/uploads/image-04.png",
-      alt: "Transport ASR dans paysage montagnard",
-      title: "Intervention Régionale",
-      description: "Nos services de dépannage dans toute la région Auvergne-Rhône-Alpes"
+      "id": 24,
+      "src": "/uploads/38.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 24",
+      "title": "Intervention #24",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 25,
+      "src": "/uploads/39.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 25",
+      "title": "Intervention #25",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 26,
+      "src": "/uploads/40.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 26",
+      "title": "Intervention #26",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 27,
+      "src": "/uploads/41.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 27",
+      "title": "Intervention #27",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 28,
+      "src": "/uploads/42.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 28",
+      "title": "Intervention #28",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 29,
+      "src": "/uploads/43.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 29",
+      "title": "Intervention #29",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 30,
+      "src": "/uploads/44.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 30",
+      "title": "Intervention #30",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 31,
+      "src": "/uploads/45.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 31",
+      "title": "Intervention #31",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 32,
+      "src": "/uploads/46.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 32",
+      "title": "Intervention #32",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 33,
+      "src": "/uploads/47.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 33",
+      "title": "Intervention #33",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 34,
+      "src": "/uploads/48.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 34",
+      "title": "Intervention #34",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 35,
+      "src": "/uploads/49.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 35",
+      "title": "Intervention #35",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 36,
+      "src": "/uploads/50.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 36",
+      "title": "Intervention #36",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 37,
+      "src": "/uploads/51.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 37",
+      "title": "Intervention #37",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 38,
+      "src": "/uploads/52.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 38",
+      "title": "Intervention #38",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 39,
+      "src": "/uploads/53.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 39",
+      "title": "Intervention #39",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 40,
+      "src": "/uploads/54.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 40",
+      "title": "Intervention #40",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 41,
+      "src": "/uploads/55.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 41",
+      "title": "Intervention #41",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 42,
+      "src": "/uploads/56.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 42",
+      "title": "Intervention #42",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 43,
+      "src": "/uploads/57.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 43",
+      "title": "Intervention #43",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 44,
+      "src": "/uploads/58.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 44",
+      "title": "Intervention #44",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 45,
+      "src": "/uploads/59.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 45",
+      "title": "Intervention #45",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 46,
+      "src": "/uploads/6.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 46",
+      "title": "Intervention #46",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 47,
+      "src": "/uploads/60.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 47",
+      "title": "Intervention #47",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 48,
+      "src": "/uploads/61.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 48",
+      "title": "Intervention #48",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 49,
+      "src": "/uploads/62.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 49",
+      "title": "Intervention #49",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 50,
+      "src": "/uploads/7.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 50",
+      "title": "Intervention #50",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 51,
+      "src": "/uploads/91.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 51",
+      "title": "Intervention #51",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 52,
+      "src": "/uploads/92.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 52",
+      "title": "Intervention #52",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 53,
+      "src": "/uploads/93.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 53",
+      "title": "Intervention #53",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 54,
+      "src": "/uploads/94.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 54",
+      "title": "Intervention #54",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
+    },
+    {
+      "id": 55,
+      "src": "/uploads/95.jpg",
+      "alt": "Intervention ASR Dépannage - Photo 55",
+      "title": "Intervention #55",
+      "description": "Photo d'une de nos interventions de dépannage ou remorquage."
     }
   ];
 

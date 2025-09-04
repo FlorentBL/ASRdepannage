@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CtaButton } from "@/components/ui/CtaButton";
-import heroImage from "/uploads/image-21.png";
+import heroImage from "@/assets/fond.png";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Intervention nocturne ASR - Dépannage poids lourd sur autoroute avec nacelle élévatrice"
+          alt="Fond d'écran ASR Dépannage"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30" />

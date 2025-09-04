@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             <p className="text-sm text-muted-foreground font-inter leading-relaxed">
               Spécialiste du dépannage et remorquage VL, utilitaires, poids lourds et bus. 
-              Service d'urgence 24h/24 en Savoie et région Rhône-Alpes.
+              Service d'urgence 7j/7 en Savoie et région Rhône-Alpes.
             </p>
           </div>
 

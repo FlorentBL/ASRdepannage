@@ -138,7 +138,7 @@ ${data.nom}
                   <div>
                     <div className="font-inter font-medium text-foreground">24h/24 - 7j/7</div>
                     <div className="text-sm text-muted-foreground">Permanence d'urgence</div>
-                    <div className="text-sm text-muted-foreground mt-1">Ouvert 24h/24</div>
+                    <div className="text-sm text-muted-foreground mt-1">Ouvert 7j/7</div>
                   </div>
                 </div>
               </CardContent>
