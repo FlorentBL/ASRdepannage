@@ -55,7 +55,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Phone Button */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
             <Button 
               variant="default" 
               size="sm" 
@@ -65,6 +65,18 @@ const Header = () => {
               <a href="tel:0479855717" className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <span className="hidden sm:inline">04 79 85 57 17</span>
+                <span className="sm:hidden">Appeler</span>
+              </a>
+            </Button>
+            <Button 
+              variant="outline"
+              size="sm" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce font-inter font-semibold"
+              asChild
+            >
+              <a href="tel:0609595920" className="flex items-center space-x-2">
+                <Phone className="h-4 w-4" />
+                <span className="hidden sm:inline">06 09 59 59 20</span>
                 <span className="sm:hidden">Appeler</span>
               </a>
             </Button>
@@ -85,7 +97,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border bg-card">
-            <nav className="flex flex-col space-y-3">
+            <nav className="flex flex-col space-y-3 px-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -101,6 +113,27 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <div className="border-t border-border/50 my-3" />
+              <Button 
+                variant="default" 
+                className="w-full gradient-yellow hover:shadow-button transition-bounce font-inter font-semibold"
+                asChild
+              >
+                <a href="tel:0479855717" className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4" />
+                  <span>04 79 85 57 17</span>
+                </a>
+              </Button>
+              <Button 
+                variant="outline"
+                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-bounce font-inter font-semibold"
+                asChild
+              >
+                <a href="tel:0609595920" className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4" />
+                  <span>06 09 59 59 20</span>
+                </a>
+              </Button>
             </nav>
           </div>
         )}
