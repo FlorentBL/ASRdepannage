@@ -98,7 +98,7 @@ const Services = () => {
             Une urgence ? Contactez-nous immédiatement
           </h3>
           <p className="text-muted-foreground font-inter mb-6">
-            Notre équipe d'intervention est disponible 7j/7 pour tous vos besoins de dépannage
+            Notre équipe d'intervention est disponible 24H/24 7j/7 pour tous vos besoins de dépannage
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CtaButton href="tel:0479855717">Intervention immédiate</CtaButton>
