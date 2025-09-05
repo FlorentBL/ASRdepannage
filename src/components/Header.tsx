@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Instagram, Facebook } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -81,6 +81,20 @@ const Header = () => {
               </a>
             </Button>
 
+            {/* Social Media Icons */}
+            <div className="hidden md:flex items-center space-x-1">
+              <Button variant="ghost" size="sm" asChild>
+                <a href="https://www.instagram.com/asrdepannage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary transition-smooth" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <a href="https://www.facebook.com/profile.php?id=100088974981912" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5 text-muted-foreground hover:text-primary transition-smooth" />
+                </a>
+              </Button>
+            </div>
+
             {/* Mobile Menu Button */}
             <Button
               variant="ghost"
@@ -134,6 +148,14 @@ const Header = () => {
                   <span>06 09 59 59 20</span>
                 </a>
               </Button>
+              <div className="flex items-center justify-center space-x-4 pt-4">
+                <a href="https://www.instagram.com/asrdepannage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth">
+                  <Instagram className="h-6 w-6" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100088974981912" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth">
+                  <Facebook className="h-6 w-6" />
+                </a>
+              </div>
             </nav>
           </div>
         )}
