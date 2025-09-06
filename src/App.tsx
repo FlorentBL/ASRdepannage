@@ -10,6 +10,8 @@ import Index from "./pages/Index";
 import GalleryPage from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import LegalNotice from "./pages/LegalNotice";
+import Privacy from "./pages/Privacy";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/galerie" element={<GalleryPage />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/mentions-legales" element={<LegalNotice />} />
+              <Route path="/politique-de-confidentialite" element={<Privacy />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

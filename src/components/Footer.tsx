@@ -112,6 +112,14 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
+            <div className="flex items-center space-x-4 text-sm text-muted-foreground font-inter">
+              <Link to="/mentions-legales" className="hover:text-primary transition-smooth">
+                Mentions Légales
+              </Link>
+              <Link to="/politique-de-confidentialite" className="hover:text-primary transition-smooth">
+                Politique de Confidentialité
+              </Link>
+            </div>
           </div>
             <div className="text-center text-xs text-muted-foreground font-inter mt-4">
                 Un site <a href="https://www.fbldigital.fr/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-smooth">FBL Digital</a>
